@@ -1,0 +1,54 @@
+﻿<Window x:Class="TakeItorLeaveIt.Play"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TakeItorLeaveIt"
+        mc:Ignorable="d"
+        Title="Take IT or Leave IT" Height="470" Width="820">
+    <Window.Resources>
+        <Style x:Key="BtnEnabled" TargetType="Button">
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="Background" Value="Red"/>
+            <Setter Property="FontSize" Value="22"/>
+        </Style>
+    </Window.Resources>
+    <Grid Background="Black">
+        <WrapPanel x:Name="BtnPrizePanel" Margin="180,17,180,10">
+            <Button x:Name="Btn1" Height="60" Width="90" Margin="10" Content="1" FontSize="22" Style="{StaticResource BtnEnabled}" Click="btnBox_Click"/>
+            <Button x:Name="Btn2" Height="60" Width="90" Margin="10" Content="2" FontSize="22" Style="{StaticResource BtnEnabled}" Click="btnBox_Click"/>
+            <Button x:Name="Btn3" Height="60" Width="90" Margin="10" Content="3" FontSize="22" Style="{StaticResource BtnEnabled}" Click="btnBox_Click"/>
+            <Button x:Name="Btn4" Height="60" Width="90" Margin="10" Content="4" FontSize="22" Style="{StaticResource BtnEnabled}" Click="btnBox_Click"/>
+            <Button x:Name="Btn5" Height="60" Width="90" Margin="10" Content="5" FontSize="22" Style="{StaticResource BtnEnabled}" Click="btnBox_Click"/>
+            <Button x:Name="Btn6" Height="60" Width="90" Margin="10" Content="6" FontSize="22" Style="{StaticResource BtnEnabled}" Click="btnBox_Click"/>
+            <Button x:Name="Btn7" Height="60" Width="90" Margin="10" Content="7" FontSize="22" Style="{StaticResource BtnEnabled}" Click="btnBox_Click"/>
+            <Button x:Name="Btn8" Height="60" Width="90" Margin="10" Content="8" FontSize="22" Style="{StaticResource BtnEnabled}" Click="btnBox_Click"/>
+            <Button x:Name="Btn9" Height="60" Width="90" Margin="10" Content="9" FontSize="22" Style="{StaticResource BtnEnabled}" Click="btnBox_Click"/>
+            <Button x:Name="Btn10" Height="60" Width="90" Margin="10" Content="10" FontSize="22" Style="{StaticResource BtnEnabled}" Click="btnBox_Click"/>
+            <Button x:Name="Btn11" Height="60" Width="90" Margin="10" Content="11" FontSize="22" Style="{StaticResource BtnEnabled}" Click="btnBox_Click"/>
+            <Button x:Name="Btn12" Height="60" Width="90" Margin="10" Content="12" FontSize="22" Style="{StaticResource BtnEnabled}" Click="btnBox_Click"/>
+            <Button x:Name="Btn13" Height="60" Width="90" Margin="10" Content="12" FontSize="22" Style="{StaticResource BtnEnabled}" Click="btnBox_Click"/>
+            <Button x:Name="Btn14" Height="60" Width="90" Margin="10" Content="14" FontSize="22" Style="{StaticResource BtnEnabled}" Click="btnBox_Click"/>
+            <Button x:Name="Btn15" Height="60" Width="90" Margin="10" Content="15" FontSize="22" Style="{StaticResource BtnEnabled}" Click="btnBox_Click"/>
+            <Button x:Name="Btn16" Height="60" Width="90" Margin="10" Content="16" FontSize="22" Style="{StaticResource BtnEnabled}" Click="btnBox_Click"/>
+            <Button x:Name="Btn17" Height="60" Width="90" Margin="10" Content="17" FontSize="22" Style="{StaticResource BtnEnabled}" Click="btnBox_Click"/>
+            <Button x:Name="Btn18" Height="60" Width="90" Margin="10" Content="18" FontSize="22" Style="{StaticResource BtnEnabled}" Click="btnBox_Click"/>
+            <Button x:Name="Btn19" Height="60" Width="90" Margin="10" Content="19" FontSize="22" Style="{StaticResource BtnEnabled}" Click="btnBox_Click"/>
+            <Button x:Name="Btn20" Height="60" Width="90" Margin="10" Content="20" FontSize="22" Style="{StaticResource BtnEnabled}" Click="btnBox_Click"/>
+        </WrapPanel>
+
+        <Label x:Name="lblInstruct" Width="150" HorizontalAlignment="Left" Margin="10,17,0,174" Foreground="White">
+            <TextBlock x:Name="txtOffer" TextWrapping="WrapWithOverflow" FontSize="24">
+                Please select the box you would like as your own!
+            </TextBlock>
+        </Label>
+        <StackPanel Margin="10,267,0,0" Width="170" Height="150" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Button x:Name="btnAccept" Content="Accept" HorizontalAlignment="Center" Margin="10" VerticalAlignment="Center" Height="50" Width="130" Background="DodgerBlue" FontSize="28" Click="btnAccept_Click"/>
+            <Button x:Name="btnRefuse" Content="Refuse" HorizontalAlignment="Center" Margin="10" VerticalAlignment="Center" Height="50" Width="130" Background="DodgerBlue" FontSize="28" Click="btnRefuse_Click"/>
+        </StackPanel>
+        <StackPanel Margin="640,267,0,0" Width="170" Height="150" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Button x:Name="btnReset" Content="Reset" HorizontalAlignment="Center" Margin="10" VerticalAlignment="Top" Height="50" Width="130" Background="DodgerBlue" FontSize="28" Click="btnReset_Click"/>
+            <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Center" Margin="10" VerticalAlignment="Center" Height="50" Width="130" Background="DodgerBlue" FontSize="28" Click="btnExit_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
